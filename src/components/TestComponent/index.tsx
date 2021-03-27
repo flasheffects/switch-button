@@ -7,12 +7,11 @@ function onChange(checked: boolean) {
 }
 
 const TestComponent: React.FC = () => {
-  return <ComponentWrapper>
-
-
-    <Switch defaultChecked onChange={onChange} />
-
-  </ComponentWrapper>;
+  return (
+    <ComponentWrapper>
+      <Switch defaultChecked onChange={onChange} />
+    </ComponentWrapper>
+  );
 };
 
 export default TestComponent;
